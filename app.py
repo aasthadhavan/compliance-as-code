@@ -1,7 +1,12 @@
 import logging
 
+logging.basicConfig(
+    filename="logs/application.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 def run_app():
-    logging.basicConfig(level=logging.INFO)
     logging.info("Application started successfully")
 
 if __name__ == "__main__":
